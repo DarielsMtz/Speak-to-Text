@@ -15,5 +15,70 @@
 /* ******************************** */
 
 /* Colores */
+:root {
+  --color-primary: #f50057;
+  --color-secondary: #222222;
+  --color-tertiary: #ffffff;
+}
+
 
 /* ******************************** */
+/* Animaciones */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* ******************************** */
+
+body {
+  background-color: var(--color-secondary);
+  color: var(--color-tertiary);
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  max-width: 400px;
+  color: rgb(215, 214, 214);
+}
+
+.btn-pulse {
+  background-color: var(--color-primary);
+  color: var(--color-tertiary);
+  font-size: 1.5rem;
+  height: 60px;
+  width: 60px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.animate {
+  animation: pulse 1s infinite;
+}
