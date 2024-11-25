@@ -1,67 +1,22 @@
-# Plantilla: Arquitectura FrontEnd
+# Speak to Text
 
-##### Plantilla Básica para poder empezar casi cualquier proyecto en **FrontEnd**
->
-> Metodología de carpetas en FrontEnd
+## Introduction
 
->Estructura en imágenes (svg, webp, iconos, etc)
-Readme, licencia MIT, gitignore
-Fuentes externas al OS
-Semiestructuras en código
-Comentarios introductorios  
+This is a simple web page that uses the Web Speech API to allow users to speak and have their voice transcribed into text.
 
----
+## Features
 
-###### _Copyright 2023 - Toni Ferra_
+- Uses the Web Speech API to allow users to speak and have their voice transcribed into text.
+- Displays the transcribed text in real-time.
+- Provides a button to start and stop the speech recognition process.
 
-## Archivos del proyecto web
+## Installation
 
-Explicación de la importancia de cada semiestructura de archivos:
+1. Clone the repository to your local machine.
+2. Open the index.html file in a web browser.
+3. Start speaking and have your voice transcribed into text.
 
-#### .gitignore
+## Usage
 
-Este archivo contiene una lista de archivos y directorios que no deben incluirse en el control de versiones de Git.
-
-#### 404.html
-
-Este archivo se muestra cuando un usuario intenta acceder a una URL que no existe.
-
-#### favicon.ico
-
-Este archivo es un icono que se muestra en la pestaña del navegador del usuario.
-
-#### humans.txt
-
-Este archivo es un documento que proporciona información sobre los creadores del proyecto.
-
-#### icon.png
-
-Este archivo es un icono que se muestra en las aplicaciones de escritorio.
-
-#### index.html
-
-Este archivo es el punto de entrada principal del sitio web.
-
-#### LICENSE
-
-Este archivo contiene la licencia de software del proyecto.
-
-#### README.md
-
-Este archivo es un documento que proporciona información sobre el proyecto.
-
-#### robots.txt
-
-Este archivo controla cómo los motores de búsqueda indexan el sitio web.
-
-#### site.webmanifest
-
-Este archivo contiene información sobre el sitio web, como su título, descripción y colores.
-
-#### sitemap.xml
-
-Este archivo contiene un mapa del sitio web, que ayuda a los motores de búsqueda a indexar el sitio web de manera más eficiente.
-
-#### assets
-
-Es la carpeta donde se guardan los archivos originales del proyecto o archivos complementarios al proyecto.
+1. Open the index.html file in a web browser.
+2. Start speaking and have your voice transcribed into text.

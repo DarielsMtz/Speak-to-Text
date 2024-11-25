@@ -17,9 +17,29 @@ recognition.onresult = (event) => {
   textOutput.textContent = `You said: "${transcript}"`; // Update the text in the <p> element
 };
 
-// Handle speech recognition errors
+// Additional event handlers for debugging
+recognition.onspeechstart = () => {
+  textOutput.textContent = "Speech has been detected.";
+};
+
+recognition.onspeechend = () => {
+  textOutput.textContent = "Speech has stopped.";
+};
+
+recognition.onaudiostart = () => {
+  textOutput.textContent = "Audio capturing started.";
+};
+
+recognition.onaudioend = () => {
+  textOutput.textContent = "Audio capturing ended.";
+};
+
 recognition.onerror = (event) => {
-  textOutput.textContent = `Error: ${event.error}`;
+  textOutput.textContent = `Error occurred in recognition: ${event.error}`;
+};
+
+recognition.onnomatch = () => {
+  textOutput.textContent = "No speech match found.";
 };
 
 // Handle click event
@@ -31,10 +51,9 @@ pulseButton.addEventListener("click", () => {
   if (pulseButton.classList.contains("animate")) {
     try {
       recognition.start(); // Start capturing voice
-      textOutput.textContent = "Listening ... "; // Update text to indicate listening
+      textOutput.textContent = "Listening... "; // Update text to indicate listening
     } catch (error) {
       textOutput.textContent = "Error starting voice recognition.";
-      pulseButton.classList.remove("animate"); // Reset animation if there's an error
     }
   } else {
     recognition.stop(); // Stop capturing voice if button is toggled off
